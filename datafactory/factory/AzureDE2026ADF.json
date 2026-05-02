@@ -1,0 +1,15 @@
+{
+	"name": "AzureDE2026ADF",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "42232a70-290e-485a-aec0-1455daa5a897",
+		"tenantId": "62f8c711-2a29-4ff1-80dd-8d433911cf56"
+	}
+}
