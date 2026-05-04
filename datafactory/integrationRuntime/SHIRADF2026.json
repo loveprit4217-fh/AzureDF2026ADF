@@ -1,7 +1,0 @@
-{
-	"name": "SHIRADF2026",
-	"properties": {
-		"type": "SelfHosted",
-		"description": "Self Hosted Integration Runtime for on prem system integration to cloud or cloud to cloud.\nAzure cannot directly access my local system"
-	}
-}
