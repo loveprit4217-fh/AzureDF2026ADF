@@ -25,13 +25,15 @@
 						}
 					},
 					"sink": {
-						"type": "JsonSink",
+						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings",
 							"copyBehavior": "PreserveHierarchy"
 						},
 						"formatSettings": {
-							"type": "JsonWriteSettings"
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false
@@ -44,7 +46,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "api_dataset_mf",
+						"referenceName": "Dataset_csv",
 						"type": "DatasetReference"
 					}
 				]
