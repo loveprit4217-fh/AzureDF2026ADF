@@ -10,13 +10,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "data_1831b893-aefe-4616-8fc6-3720123032b6_7eb58607-b88b-4ad0-a6fe-9eac47d54eee.txt",
 				"folderPath": "SampleContainer/Datafiles",
 				"fileSystem": "2026"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "",
+			"rowDelimiter": "",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"quoteChar": ""
 		},
 		"schema": []
 	}
