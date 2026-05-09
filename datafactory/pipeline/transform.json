@@ -13,7 +13,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "API Name",
+						"value": "['/mf','/mf/{scheme_code}','/mf/{scheme_code}/latest','mf/search']"
+					}
+				],
 				"typeProperties": {
 					"notebookPath": "/Users/lovepritmathers@gmail.com/Databricks notebook"
 				},
@@ -24,14 +29,6 @@
 			}
 		],
 		"concurrency": 1,
-		"variables": {
-			"API Name": {
-				"type": "Array",
-				"defaultValue": [
-					"['/mf','/mf/{scheme_code}','/mf/{scheme_code}/latest','mf/search']"
-				]
-			}
-		},
 		"annotations": []
 	}
 }
