@@ -1,0 +1,37 @@
+{
+	"name": "transform",
+	"properties": {
+		"activities": [
+			{
+				"name": "Transform API Data",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/lovepritmathers@gmail.com"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksLinkedService",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"concurrency": 1,
+		"variables": {
+			"API Name": {
+				"type": "Array",
+				"defaultValue": [
+					"['/mf','/mf/{scheme_code}','/mf/{scheme_code}/latest','mf/search']"
+				]
+			}
+		},
+		"annotations": []
+	}
+}
