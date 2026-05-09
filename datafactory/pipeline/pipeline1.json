@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Azure Function1",
-				"type": "AzureFunctionActivity",
+				"name": "Transform",
+				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -13,9 +13,25 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/lovepritmathers@gmail.com"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksLinkedService",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
+		"concurrency": 1,
+		"variables": {
+			"API Name": {
+				"type": "Array",
+				"defaultValue": [
+					"['/mf','/mf/{scheme_code}','/mf/{scheme_code}/latest','mf/search']"
+				]
+			}
+		},
 		"annotations": []
 	}
 }
