@@ -1,0 +1,13 @@
+{
+	"name": "RestServiceAPI",
+	"properties": {
+		"description": "Rest Service API Linked Service",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.mfapi.in",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
