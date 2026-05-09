@@ -1,0 +1,12 @@
+{
+	"name": "dataset_rest_mf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestServiceAPI",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
