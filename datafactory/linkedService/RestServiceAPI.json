@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.mfapi.in",
+			"url": "https://api.mfapi.in/mf'",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
