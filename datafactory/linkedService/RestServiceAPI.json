@@ -1,5 +1,6 @@
 {
 	"name": "RestServiceAPI",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "Rest Service API Linked Service",
 		"annotations": [],
@@ -7,7 +8,9 @@
 		"typeProperties": {
 			"url": "https://github.com/loveprit4217-fh/dataset/blob/main/accounts.csv",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous"
+			"authenticationType": "Basic",
+			"userName": "loveprit4217-fh",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDlDNjQwRTQzLUZGRTAtNEU2OC1CQTAxLTY5MDAzOThGMEJFOV9iOTYwMjhlNC0yMzVkLTQ2MzgtYTM2Ni1kZGViZjFkMzQwYmUiDQp9"
 		}
 	}
 }
