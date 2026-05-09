@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "GitHubToADLS",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopyDataFromGit",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
