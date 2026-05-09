@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.mfapi.in/mf",
+			"url": "https://github.com/loveprit4217-fh/dataset/blob/main/accounts.csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
