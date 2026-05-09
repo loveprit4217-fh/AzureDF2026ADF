@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "mf",
-				"folderPath": "api_data",
+				"folderPath": "api_data/mf",
 				"fileSystem": "2026"
 			}
 		},
