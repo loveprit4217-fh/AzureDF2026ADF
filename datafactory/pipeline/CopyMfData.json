@@ -1,9 +1,9 @@
 {
-	"name": "copymfdata",
+	"name": "CopyMfData",
 	"properties": {
 		"activities": [
 			{
-				"name": "copymfdata",
+				"name": "CopyMfData",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -34,7 +34,21 @@
 							"type": "JsonWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['payload']['codeViewBlobRoute']['csv'][0][0]"
+								},
+								"sink": {
+									"path": "$['payload']['codeViewBlobRoute']['csv'][0][0]"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
 				},
 				"inputs": [
 					{
